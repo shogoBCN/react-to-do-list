@@ -178,13 +178,11 @@ class ToDoList extends React.Component {
               <input type="text" className="mt-1" placeholder="New Task" value={new_task} onChange={this.handleChange} />
               <button type="submit" className="btn btn-light btn-sm ml-2">Submit</button>
             </form>
-
             <div className="d-flex align-items-center">
               <button className="btn-light btn-sm" id={active === 'all' ? 'active' : ''} name="all" onClick={this.toggleFilter}>all</button> 
               <button className="btn-light btn-sm" id={active === 'active' ? 'active' : ''} name="active" onClick={this.toggleFilter}>active</button>
               <button className="btn-light btn-sm" id={active === 'completed' ? 'active' : ''} name="completed" onClick={this.toggleFilter}>done</button>
             </div>
-
           </div>
         </div>
       </div>
